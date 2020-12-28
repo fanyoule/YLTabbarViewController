@@ -29,10 +29,8 @@
     self.automaticallyAdjustsScrollViewInsets = YES;
     self.view.backgroundColor = [UIColor whiteColor];
     
-    
-       CGFloat nav_height = kStatusBarH;
-       
-       if ([self hasNavView]) {
+    CGFloat nav_height = kStatusBarH;
+    if ([self hasNavView]) {
            _navgationSuperView = [[UIView alloc]init];
            _navgationSuperView.backgroundColor = UIColor.purpleColor;
            [self.view addSubview:_navgationSuperView];
@@ -90,9 +88,6 @@
     return UIStatusBarStyleDefault;
 }
 
-
-
-
 /*
 #pragma mark - Navigation
 
@@ -102,5 +97,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
 
 @end

@@ -67,14 +67,18 @@ UINavigationControllerDelegate
 -(void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
     self.tabBar.hidden = YES;
     UIViewController * root = navigationController.viewControllers.firstObject;
-    if (viewController != root) {
-        self.tabbars.hidden = YES;
-    }else{
-        self.tabbars.hidden = NO;
-    }
+    [root.view addSubview:self.tabbars];
 
 }
-
+-(void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    UIViewController *root = navigationController.viewControllers[0];
+    if (viewController == root) {
+        [self.tabbars removeFromSuperview];
+        self.tabbars.frame = CGRectMake(0, kScreenH-kTabBarHeight, kScreenW, kTabBarHeight);
+        [self.view addSubview:self.tabbars];
+    }
+}
 
 /*
 #pragma mark - Navigation

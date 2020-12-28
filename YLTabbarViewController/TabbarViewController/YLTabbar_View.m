@@ -9,12 +9,10 @@
 #import "YLTabbar_View.h"
 #define K_WIDTH_YL  [UIScreen mainScreen].bounds.size.width
 #define ITEMTAG 1000
-#define BADGETAG 10086
-#define RADIUS 15
-@interface YLTabbar_View()<CAAnimationDelegate>
+
+@interface YLTabbar_View()
 {
-    UIBezierPath * animationPath;
-    CAShapeLayer * shapeLayer;
+
     NSInteger count;
    
 }
@@ -24,9 +22,6 @@
 -(instancetype)initWithFrame:(CGRect)frame Titles:(NSArray<NSString *> *)titles itemImages:(NSArray *)itemImgs selectImages :(NSArray *)selectImages withTitleColor:(UIColor *)def_color withTitleSelectColor:(UIColor *)sel_color{
     
      if (self = [super initWithFrame:frame]) {
-   
-        animationPath = [[UIBezierPath alloc]init];
-        shapeLayer = [CAShapeLayer layer];
         _titles = titles;
         _itemImages = itemImgs;
         _defColor = def_color;
@@ -87,10 +82,6 @@
     if (self.delegate) {
         [self.delegate YLTabbar_selectedIndex:selectIndex];
     }
-    
-    
-    
-    
     
 }
 /**

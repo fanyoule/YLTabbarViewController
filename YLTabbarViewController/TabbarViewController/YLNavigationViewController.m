@@ -44,7 +44,7 @@
         viewController.hidesBottomBarWhenPushed = YES;
         // 就有滑动返回功能
         self.interactivePopGestureRecognizer.delegate = nil;
-        //返回按钮自定义
+        //返回按钮自定义 自定义TabbarViewController
         UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         negativeSpacer.width = -15;
         

@@ -22,6 +22,7 @@
 		04EC0AD024AAD19400A5EFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EC0ACF24AAD19400A5EFD7 /* Assets.xcassets */; };
 		04EC0AD324AAD19400A5EFD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EC0AD124AAD19400A5EFD7 /* LaunchScreen.storyboard */; };
 		04EC0AD624AAD19400A5EFD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC0AD524AAD19400A5EFD7 /* main.m */; };
+		04F0482825217520008B80D9 /* TKTTSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0482725217520008B80D9 /* TKTTSManager.m */; };
 		C471FA87D171FD7018B900FC /* libPods-YLTabbarViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F52C168ED48E2DA6E2C16D6 /* libPods-YLTabbarViewController.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		04EC0AD224AAD19400A5EFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04EC0AD424AAD19400A5EFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04EC0AD524AAD19400A5EFD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04F0482625217520008B80D9 /* TKTTSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTTSManager.h; sourceTree = "<group>"; };
+		04F0482725217520008B80D9 /* TKTTSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTTSManager.m; sourceTree = "<group>"; };
 		6F52C168ED48E2DA6E2C16D6 /* libPods-YLTabbarViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLTabbarViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92BC56CC67A2DDE1ECA463CF /* Pods-YLTabbarViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLTabbarViewController.debug.xcconfig"; path = "Target Support Files/Pods-YLTabbarViewController/Pods-YLTabbarViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		E942FA3DB028D74F4570502A /* Pods-YLTabbarViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLTabbarViewController.release.xcconfig"; path = "Target Support Files/Pods-YLTabbarViewController/Pods-YLTabbarViewController.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		0495726224AC76720083EAD6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				04F0482525217520008B80D9 /* TKTTSManager */,
 				0495728324AC76720083EAD6 /* UIImageCagegory */,
 				0495728924AC76720083EAD6 /* UIViewControllerCategory */,
 			);
@@ -153,6 +157,15 @@
 				04EC0AD524AAD19400A5EFD7 /* main.m */,
 			);
 			path = YLTabbarViewController;
+			sourceTree = "<group>";
+		};
+		04F0482525217520008B80D9 /* TKTTSManager */ = {
+			isa = PBXGroup;
+			children = (
+				04F0482625217520008B80D9 /* TKTTSManager.h */,
+				04F0482725217520008B80D9 /* TKTTSManager.m */,
+			);
+			path = TKTTSManager;
 			sourceTree = "<group>";
 		};
 		7A1A65245B3B33D9D5C44E74 /* Pods */ = {
@@ -274,6 +287,7 @@
 				04C2788D24B2C0B200102143 /* YLBaseButton.m in Sources */,
 				04C464DF24DCF369008A7EB0 /* YLTabbar_View.m in Sources */,
 				04C2788A24B2C08400102143 /* YLBaseViewController.m in Sources */,
+				04F0482825217520008B80D9 /* TKTTSManager.m in Sources */,
 				049572A024AC76720083EAD6 /* UIViewController+Category.m in Sources */,
 				04C464E224DCF369008A7EB0 /* YLTabBarViewController.m in Sources */,
 				0495729E24AC76720083EAD6 /* UIImage+Extension.m in Sources */,
